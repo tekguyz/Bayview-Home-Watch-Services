@@ -91,16 +91,16 @@ export default function TrustPanel() {
                 whileInView={{ opacity: 1, rotate: -2, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
-                className="absolute bottom-[-30px] right-2 sm:right-6 md:right-4 lg:-right-8 bg-brand-navy text-brand-sand border-2 border-brand-gold px-6 py-4 rounded-xl shadow-2xl max-w-[280px]"
+                className="absolute bottom-[-16px] sm:bottom-[-25px] right-1.5 sm:right-4 lg:-right-6 bg-brand-navy text-brand-sand border border-brand-gold sm:border-2 px-3 py-2 sm:px-6 sm:py-3.5 rounded-lg sm:rounded-xl shadow-xl sm:shadow-2xl max-w-[190px] sm:max-w-[260px] z-20"
               >
                 <div className="text-center">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-brand-teal mb-1">Our Professional Verdict</div>
-                  <span className="font-extrabold text-sm sm:text-base text-brand-sand tracking-wide block leading-tight uppercase font-mono">
+                  <div className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-teal mb-0.5 sm:mb-1">Our Professional Verdict</div>
+                  <span className="font-extrabold text-[10px] sm:text-xs md:text-sm text-brand-sand tracking-wide block leading-tight uppercase font-mono">
                     &ldquo;ALL CLEAR. YOU&apos;RE GOOD. <br />
                     <span className="text-brand-gold">GO ENJOY LIFE!&rdquo;</span>
                   </span>
-                  <div className="mt-1 flex justify-center text-brand-teal">
-                    <Heart className="h-4.5 w-4.5 fill-current" />
+                  <div className="mt-0.5 sm:mt-1 flex justify-center text-brand-teal">
+                    <Heart className="h-3.5 w-3.5 sm:h-4 w-4 fill-current" />
                   </div>
                 </div>
               </motion.div>

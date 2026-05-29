@@ -152,7 +152,7 @@ export default function ContactForm() {
                     Security Footprint Received
                   </h3>
                   <p className="text-base text-brand-navy/80 leading-relaxed mt-4 font-medium">
-                    Thank you! We have received your security footprint and will call you within 12 hours to finalize your customized seasonal protection portfolio.
+                    Thank you! We have received your security footprint and will call you within 12 hours to finalize your customized seasonal watch plan.
                   </p>
                   
                   <button
@@ -289,12 +289,12 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full rounded-xl bg-brand-navy py-4 text-center text-sm font-black text-brand-sand tracking-wide shadow-md transition-all duration-300 hover:bg-brand-teal hover:text-brand-navy hover:-translate-y-0.5 flex items-center justify-center gap-3 active:scale-95 disabled:opacity-50"
+                    className="w-full rounded-xl bg-brand-navy py-4 px-6 text-center text-sm sm:text-base font-black text-brand-sand tracking-wide shadow-md transition-all duration-300 hover:bg-brand-teal hover:text-brand-navy hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95 disabled:opacity-50 group"
                   >
                     <span>
-                      {status === "submitting" ? "Encrypting Connection..." : "Request Seasonal Protection Portfolio"}
+                      {status === "submitting" ? "Securing connection..." : "Get Your Custom Property Plan"}
                     </span>
-                    <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-4.5 w-4.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
 
                   {/* Fine Print Secure disclaimer */}

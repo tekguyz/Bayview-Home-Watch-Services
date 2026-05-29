@@ -208,12 +208,12 @@ export default function Header() {
       
       <div
         className={`fixed inset-x-0 bottom-0 z-40 w-full bg-brand-sand border-t border-brand-navy/10 md:hidden transition-all duration-300 shadow-2xl ${
-          isScrolled ? "top-14 h-[calc(100vh-3.5rem)]" : "top-16 h-[calc(100vh-4rem)]"
+          isScrolled ? "top-14 h-[calc(100dvh-3.5rem)]" : "top-16 h-[calc(100dvh-4rem)]"
         } ${
           isOpen ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-4 invisible pointer-events-none"
         }`}
       >
-        <nav className="flex flex-col gap-2 px-6 py-10 h-full justify-start overflow-y-auto bg-brand-sand">
+        <nav className="flex flex-col gap-2 px-6 pt-6 pb-20 h-full justify-start overflow-y-auto bg-brand-sand">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (

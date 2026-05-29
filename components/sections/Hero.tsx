@@ -144,23 +144,19 @@ export default function Hero() {
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 referrerPolicy="no-referrer"
               />
-              
-              {/* Compact Floating Protective Status Badge */}
-              <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-[280px] p-4 rounded-xl bg-brand-navy/90 backdrop-blur-md border border-brand-sand/10 text-brand-sand shadow-xl flex flex-col gap-1 transition-all duration-300 hover:bg-brand-navy/95">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-brand-teal">Patrol Status</span>
-                  <span className="flex h-2 w-2 relative">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-teal"></span>
-                  </span>
-                </div>
-                <p className="text-sm font-extrabold tracking-tight">Seasonal Monitoring Active</p>
-                <p className="text-[10px] text-brand-sand/70 leading-normal">
-                  Meticulous interior/exterior inspections & instant digital walkthrough reports.
-                </p>
-              </div>
-
             </motion.div>
+
+            {/* Compact Floating Protective Status Badge - Positioned half-on, half-off bottom margin */}
+            <div className="absolute -bottom-4 sm:-bottom-6 left-6 right-6 sm:left-auto sm:right-8 sm:max-w-[240px] p-2.5 rounded-xl bg-brand-navy/95 backdrop-blur-md border border-brand-sand/15 text-brand-sand shadow-xl flex flex-col gap-0.5 transition-all duration-300 hover:bg-brand-navy z-20">
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-[9px] font-black uppercase tracking-widest text-brand-teal">Patrol Status</span>
+                <span className="flex h-1.5 w-1.5 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-teal"></span>
+                </span>
+              </div>
+              <p className="text-xs font-bold tracking-tight">Seasonal Monitoring Active</p>
+            </div>
 
           </div>
 
