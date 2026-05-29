@@ -55,7 +55,7 @@ export default function ContactForm() {
         {/* Dynamic header text layout */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-xs font-extrabold uppercase tracking-widest text-brand-teal px-3 py-1.5 rounded-full bg-brand-teal/10 border border-brand-teal/20">
-            Intake and Security Onboarding
+            Get In Touch
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-navy tracking-tight mt-6 leading-tight">
             Let&apos;s Keep Your Piece of Paradise Protected
@@ -149,10 +149,10 @@ export default function ContactForm() {
                     <CheckCircle2 className="h-8 w-8" />
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-black text-brand-navy tracking-tight">
-                    Security Footprint Received
+                    Inquiry Received
                   </h3>
                   <p className="text-base text-brand-navy/80 leading-relaxed mt-4 font-medium">
-                    Thank you! We have received your security footprint and will call you within 12 hours to finalize your customized seasonal watch plan.
+                    Thank you! We have received your request and will call you within 12 hours to finalize your customized seasonal watch plan.
                   </p>
                   
                   <button
@@ -169,10 +169,10 @@ export default function ContactForm() {
                   {/* Form Intro */}
                   <div className="mb-4">
                     <h3 className="text-lg font-extrabold text-brand-navy tracking-tight">
-                      Custom Protection Blueprint Form
+                      Request Your Free Quote
                     </h3>
                     <p className="text-xs text-brand-navy/60 font-semibold uppercase tracking-wider mt-1">
-                      Fill out your property metrics safely
+                      Fill out your info to get started
                     </p>
                   </div>
 
@@ -182,7 +182,7 @@ export default function ContactForm() {
                     {/* Owner's Name */}
                     <div className="flex flex-col gap-2">
                       <label htmlFor="name" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider">
-                        Owner&apos;s Full Name
+                        Full Name
                       </label>
                       <input
                         type="text"
@@ -197,9 +197,8 @@ export default function ContactForm() {
 
                     {/* Secure Phone */}
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="phone" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider flex items-center gap-2">
-                        <span>Secure Contact Phone</span>
-                        <span className="text-[10px] text-brand-navy/40 font-bold lowercase italic">(tel link)</span>
+                      <label htmlFor="phone" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider">
+                        Phone Number
                       </label>
                       <input
                         type="tel"
@@ -215,7 +214,7 @@ export default function ContactForm() {
                     {/* Direct Email Address */}
                     <div className="flex flex-col gap-2">
                       <label htmlFor="email" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider">
-                        Direct Email Address
+                        Email Address
                       </label>
                       <input
                         type="email"
@@ -232,7 +231,7 @@ export default function ContactForm() {
                     <div className="flex flex-col gap-2">
                       <label htmlFor="zipCode" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider flex items-center gap-1">
                         <MapPin className="h-3.5 w-3.5 text-brand-teal" />
-                        <span>Florida Property Zip Code</span>
+                        <span>Property Zip Code</span>
                       </label>
                       <input
                         type="text"
@@ -249,7 +248,7 @@ export default function ContactForm() {
                     <div className="flex flex-col gap-2 sm:col-span-2">
                       <label htmlFor="departureWindow" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider flex items-center gap-1.5">
                         <Clock className="h-3.5 w-3.5 text-brand-teal" />
-                        <span>Estimated Departure Window & Timeline</span>
+                        <span>Departure Timeline</span>
                       </label>
                       <input
                         type="text"
@@ -265,7 +264,7 @@ export default function ContactForm() {
                     {/* Special System Requirements */}
                     <div className="flex flex-col gap-2 sm:col-span-2">
                       <label htmlFor="specialRequirements" className="text-xs font-extrabold text-brand-navy uppercase tracking-wider">
-                        Special System Requirements
+                        Special Requests
                       </label>
                       <textarea
                         id="specialRequirements"
@@ -282,7 +281,7 @@ export default function ContactForm() {
                   {/* Dynamic submission status handling */}
                   {status === "error" && (
                     <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-semibold">
-                      An error occurred securely processing your footprint request. Please call us directly!
+                      An error occurred. Please call us directly!
                     </div>
                   )}
 
@@ -292,7 +291,7 @@ export default function ContactForm() {
                     className="w-full rounded-xl bg-brand-navy py-4 px-6 text-center text-sm sm:text-base font-black text-brand-sand tracking-wide shadow-md transition-all duration-300 hover:bg-brand-teal hover:text-brand-navy hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95 disabled:opacity-50 group"
                   >
                     <span>
-                      {status === "submitting" ? "Securing connection..." : "Get Your Custom Property Plan"}
+                      {status === "submitting" ? "Sending..." : "Get a Free Quote"}
                     </span>
                     <ArrowRight className="h-4.5 w-4.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                   </button>

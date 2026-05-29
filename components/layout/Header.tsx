@@ -213,7 +213,7 @@ export default function Header() {
           isOpen ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-4 invisible pointer-events-none"
         }`}
       >
-        <nav className="flex flex-col gap-2 px-6 pt-6 pb-20 h-full justify-start overflow-y-auto bg-brand-sand">
+        <nav className="flex flex-col gap-2 px-6 py-10 h-full justify-start overflow-y-auto bg-brand-sand">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
