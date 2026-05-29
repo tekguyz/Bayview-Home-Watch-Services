@@ -62,88 +62,91 @@ export default function Header() {
     <header 
       className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
         isScrolled 
-          ? "border-brand-navy/10 bg-brand-sand/95 backdrop-blur-md shadow-sm h-20" 
-          : "border-transparent bg-brand-sand h-24"
+          ? "border-brand-navy/10 bg-brand-sand/95 backdrop-blur-md shadow-sm h-14 md:h-16" 
+          : "border-transparent bg-brand-sand h-16 md:h-20"
       }`}
     >
       <div className="relative z-50 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-between">
           
-          <a href="#home" className="flex items-center gap-2.5 group py-2">
-            <div className="h-10 w-10 shrink-0 transform transition-transform group-hover:scale-105 duration-300">
-              <svg className="h-full w-full" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Elegant protective watchful arch */}
-                <path 
-                  d="M 8 44 C 8 20, 56 20, 56 44" 
-                  stroke="currentColor" 
-                  className="stroke-brand-teal" 
-                  strokeWidth="2.5" 
-                  strokeLinecap="round" 
-                />
-                
-                {/* Minimalist modern luxury sloped-roof house profile */}
-                {/* Roof slab */}
-                <path 
-                  d="M 14 34 L 38 22 L 48 30" 
-                  stroke="currentColor" 
-                  className="stroke-brand-navy" 
-                  strokeWidth="3.5" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                />
-                {/* Main house frame */}
-                <path 
-                  d="M 18 32 V 46 H 44 V 32.5" 
-                  stroke="currentColor" 
-                  className="stroke-brand-navy" 
-                  strokeWidth="2.5" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                />
-                {/* Modern vertical glass window pane */}
-                <rect 
-                  x="24" 
-                  y="36" 
-                  width="6" 
-                  height="10" 
-                  stroke="currentColor" 
-                  className="stroke-brand-navy" 
-                  strokeWidth="1.5" 
-                  rx="1" 
-                />
-                <line 
-                  x1="34" 
-                  y1="36" 
-                  x2="38" 
-                  y2="36" 
-                  stroke="currentColor" 
-                  className="stroke-brand-teal" 
-                  strokeWidth="1.5" 
-                  strokeLinecap="round" 
-                />
+          <a href="#home" className="flex items-center gap-2.5 group py-1 animate-fade-in">
+            <svg 
+              className="h-9 w-auto md:h-10 shrink-0 transform transition-transform group-hover:scale-105 duration-300 text-brand-teal" 
+              viewBox="7 9 50 39" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Elegant protective watchful arch */}
+              <path 
+                d="M 8 44 C 8 20, 56 20, 56 44" 
+                stroke="currentColor" 
+                className="stroke-brand-teal" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+              />
+              
+              {/* Minimalist modern luxury sloped-roof house profile */}
+              {/* Roof slab */}
+              <path 
+                d="M 14 34 L 38 22 L 48 30" 
+                stroke="currentColor" 
+                className="stroke-brand-navy" 
+                strokeWidth="3.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+              />
+              {/* Main house frame */}
+              <path 
+                d="M 18 32 V 46 H 44 V 32.5" 
+                stroke="currentColor" 
+                className="stroke-brand-navy" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+              />
+              {/* Modern vertical glass window pane */}
+              <rect 
+                x="24" 
+                y="36" 
+                width="6" 
+                height="10" 
+                stroke="currentColor" 
+                className="stroke-brand-navy" 
+                strokeWidth="1.5" 
+                rx="1" 
+              />
+              <line 
+                x1="34" 
+                y1="36" 
+                x2="38" 
+                y2="36" 
+                stroke="currentColor" 
+                className="stroke-brand-teal" 
+                strokeWidth="1.5" 
+                strokeLinecap="round" 
+              />
 
-                {/* Stylized palm tree silhouette */}
-                <path 
-                  d="M 49 46 Q 52 38 49 28" 
-                  stroke="currentColor" 
-                  className="stroke-brand-navy" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                />
-                <path 
-                  d="M 49 28 Q 43 25 39 30 M 49 28 Q 46 20 44 14 M 49 28 Q 53 21 58 24 M 49 28 Q 55 28 58 35" 
-                  stroke="currentColor" 
-                  className="stroke-brand-teal" 
-                  strokeWidth="1.5" 
-                  strokeLinecap="round" 
-                />
+              {/* Stylized palm tree silhouette */}
+              <path 
+                d="M 49 46 Q 52 38 49 28" 
+                stroke="currentColor" 
+                className="stroke-brand-navy" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+              />
+              <path 
+                d="M 49 28 Q 43 25 39 30 M 49 28 Q 46 20 44 14 M 49 28 Q 53 21 58 24 M 49 28 Q 55 28 58 35" 
+                stroke="currentColor" 
+                className="stroke-brand-teal" 
+                strokeWidth="1.5" 
+                strokeLinecap="round" 
+              />
 
-                {/* Golden warm coastal sun accent */}
-                <circle cx="32" cy="14" r="3" className="fill-brand-gold stroke-brand-gold" strokeWidth="1" />
-              </svg>
-            </div>
+              {/* Golden warm coastal sun accent */}
+              <circle cx="32" cy="14" r="3" className="fill-brand-gold stroke-brand-gold" strokeWidth="1" />
+            </svg>
             <div className="flex flex-col">
-              <span className="text-lg font-black tracking-widest text-brand-navy leading-none transition-colors duration-300 group-hover:text-brand-teal uppercase">
+              <span className="text-base md:text-lg font-black tracking-widest text-brand-navy leading-none transition-colors duration-300 group-hover:text-brand-teal uppercase">
                 Bayview
               </span>
               <span className="text-[9px] font-extrabold uppercase tracking-widest text-brand-navy/60 leading-none mt-1 whitespace-nowrap">
@@ -205,7 +208,7 @@ export default function Header() {
       
       <div
         className={`fixed inset-x-0 bottom-0 z-40 w-full bg-brand-sand border-t border-brand-navy/10 md:hidden transition-all duration-300 shadow-2xl ${
-          isScrolled ? "top-20 h-[calc(100vh-5rem)]" : "top-24 h-[calc(100vh-6rem)]"
+          isScrolled ? "top-14 h-[calc(100vh-3.5rem)]" : "top-16 h-[calc(100vh-4rem)]"
         } ${
           isOpen ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-4 invisible pointer-events-none"
         }`}

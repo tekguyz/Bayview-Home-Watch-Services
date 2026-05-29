@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css'; // Global styles
 
@@ -6,6 +6,13 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
 });
+
+// Configure premium browser status bar theme alignments
+export const viewport: Viewport = {
+  themeColor: '#081721',
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bayviewhomewatchservices.vercel.app'),

@@ -19,82 +19,85 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-brand-sand/10 pb-16">
           
           {/* Column 1: Brand & Modern Guardian Logo */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
             <a href="#home" className="flex items-center gap-2.5 group self-start">
-              <div className="h-10 w-10 shrink-0 transform transition-transform group-hover:scale-105 duration-300">
-                <svg className="h-full w-full" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Elegant protective watchful arch */}
-                  <path 
-                    d="M 8 44 C 8 20, 56 20, 56 44" 
-                    stroke="currentColor" 
-                    className="stroke-brand-teal" 
-                    strokeWidth="2.5" 
-                    strokeLinecap="round" 
-                  />
-                  
-                  {/* Minimalist modern luxury sloped-roof house profile */}
-                  {/* Roof slab */}
-                  <path 
-                    d="M 14 34 L 38 22 L 48 30" 
-                    stroke="currentColor" 
-                    className="stroke-brand-sand" 
-                    strokeWidth="3.5" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                  />
-                  {/* Main house frame */}
-                  <path 
-                    d="M 18 32 V 46 H 44 V 32.5" 
-                    stroke="currentColor" 
-                    className="stroke-brand-sand" 
-                    strokeWidth="2.5" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                  />
-                  {/* Modern vertical glass window pane */}
-                  <rect 
-                    x="24" 
-                    y="36" 
-                    width="6" 
-                    height="10" 
-                    stroke="currentColor" 
-                    className="stroke-brand-sand" 
-                    strokeWidth="1.5" 
-                    rx="1" 
-                  />
-                  <line 
-                    x1="34" 
-                    y1="36" 
-                    x2="38" 
-                    y2="36" 
-                    stroke="currentColor" 
-                    className="stroke-brand-teal" 
-                    strokeWidth="1.5" 
-                    strokeLinecap="round" 
-                  />
+              <svg 
+                className="h-9 w-auto md:h-10 shrink-0 transform transition-transform group-hover:scale-105 duration-300 text-brand-teal" 
+                viewBox="7 9 50 39" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Elegant protective watchful arch */}
+                <path 
+                  d="M 8 44 C 8 20, 56 20, 56 44" 
+                  stroke="currentColor" 
+                  className="stroke-brand-teal" 
+                  strokeWidth="2.5" 
+                  strokeLinecap="round" 
+                />
+                
+                {/* Minimalist modern luxury sloped-roof house profile */}
+                {/* Roof slab */}
+                <path 
+                  d="M 14 34 L 38 22 L 48 30" 
+                  stroke="currentColor" 
+                  className="stroke-brand-sand" 
+                  strokeWidth="3.5" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                />
+                {/* Main house frame */}
+                <path 
+                  d="M 18 32 V 46 H 44 V 32.5" 
+                  stroke="currentColor" 
+                  className="stroke-brand-sand" 
+                  strokeWidth="2.5" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                />
+                {/* Modern vertical glass window pane */}
+                <rect 
+                  x="24" 
+                  y="36" 
+                  width="6" 
+                  height="10" 
+                  stroke="currentColor" 
+                  className="stroke-brand-sand" 
+                  strokeWidth="1.5" 
+                  rx="1" 
+                />
+                <line 
+                  x1="34" 
+                  y1="36" 
+                  x2="38" 
+                  y2="36" 
+                  stroke="currentColor" 
+                  className="stroke-brand-teal" 
+                  strokeWidth="1.5" 
+                  strokeLinecap="round" 
+                />
 
-                  {/* Stylized palm tree silhouette */}
-                  <path 
-                    d="M 49 46 Q 52 38 49 28" 
-                    stroke="currentColor" 
-                    className="stroke-brand-sand" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                  />
-                  <path 
-                    d="M 49 28 Q 43 25 39 30 M 49 28 Q 46 20 44 14 M 49 28 Q 53 21 58 24 M 49 28 Q 55 28 58 35" 
-                    stroke="currentColor" 
-                    className="stroke-brand-teal" 
-                    strokeWidth="1.5" 
-                    strokeLinecap="round" 
-                  />
+                {/* Stylized palm tree silhouette */}
+                <path 
+                  d="M 49 46 Q 52 38 49 28" 
+                  stroke="currentColor" 
+                  className="stroke-brand-sand" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                />
+                <path 
+                  d="M 49 28 Q 43 25 39 30 M 49 28 Q 46 20 44 14 M 49 28 Q 53 21 58 24 M 49 28 Q 55 28 58 35" 
+                  stroke="currentColor" 
+                  className="stroke-brand-teal" 
+                  strokeWidth="1.5" 
+                  strokeLinecap="round" 
+                />
 
-                  {/* Golden warm coastal sun accent */}
-                  <circle cx="32" cy="14" r="3" className="fill-brand-gold stroke-brand-gold" strokeWidth="1" />
-                </svg>
-              </div>
+                {/* Golden warm coastal sun accent */}
+                <circle cx="32" cy="14" r="3" className="fill-brand-gold stroke-brand-gold" strokeWidth="1" />
+              </svg>
               <div className="flex flex-col">
-                <span className="text-lg font-black tracking-widest text-brand-sand leading-none transition-colors duration-300 group-hover:text-brand-teal uppercase">
+                <span className="text-base md:text-lg font-black tracking-widest text-brand-sand leading-none transition-colors duration-300 group-hover:text-brand-teal uppercase">
                   Bayview
                 </span>
                 <span className="text-[9px] font-extrabold uppercase tracking-widest text-brand-teal leading-none mt-1 whitespace-nowrap">

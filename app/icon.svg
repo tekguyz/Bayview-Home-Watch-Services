@@ -1,8 +1,11 @@
 <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  {/* Solid background circle protecting against dark/light browser interfaces */}
+  <circle cx="32" cy="32" r="30" fill="#081721" />
+
   {/* Elegant protective watchful arch */}
   <path 
     d="M 8 44 C 8 20, 56 20, 56 44" 
-    stroke="#00a896" 
+    stroke="#47b2c2" 
     strokeWidth="2.5" 
     strokeLinecap="round" 
   />
@@ -11,7 +14,7 @@
   {/* Roof slab */}
   <path 
     d="M 14 34 L 38 22 L 48 30" 
-    stroke="#081721" 
+    stroke="#ffffff" 
     strokeWidth="3.5" 
     strokeLinecap="round" 
     strokeLinejoin="round" 
@@ -19,7 +22,7 @@
   {/* Main house frame */}
   <path 
     d="M 18 32 V 46 H 44 V 32.5" 
-    stroke="#081721" 
+    stroke="#ffffff" 
     strokeWidth="2.5" 
     strokeLinecap="round" 
     strokeLinejoin="round" 
@@ -30,7 +33,7 @@
     y="36" 
     width="6" 
     height="10" 
-    stroke="#081721" 
+    stroke="#ffffff" 
     strokeWidth="1.5" 
     rx="1" 
   />
@@ -39,7 +42,7 @@
     y1="36" 
     x2="38" 
     y2="36" 
-    stroke="#00a896" 
+    stroke="#47b2c2" 
     strokeWidth="1.5" 
     strokeLinecap="round" 
   />
@@ -47,13 +50,13 @@
   {/* Stylized palm tree silhouette */}
   <path 
     d="M 49 46 Q 52 38 49 28" 
-    stroke="#081721" 
+    stroke="#ffffff" 
     strokeWidth="2" 
     strokeLinecap="round" 
   />
   <path 
     d="M 49 28 Q 43 25 39 30 M 49 28 Q 46 20 44 14 M 49 28 Q 53 21 58 24 M 49 28 Q 55 28 58 35" 
-    stroke="#00a896" 
+    stroke="#47b2c2" 
     strokeWidth="1.5" 
     strokeLinecap="round" 
   />

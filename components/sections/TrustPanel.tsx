@@ -70,7 +70,7 @@ export default function TrustPanel() {
               {/* Chief Relaxation Officer Portrayed Image */}
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand bg-brand-navy/5 group">
                 <Image 
-                  src="https://picsum.photos/seed/homegold/700/700"
+                  src="https://images.unsplash.com/photo-1626736637845-53045bb9695b?q=80&w=711"
                   alt="A beautiful Golden Retriever dog relaxing in a coastal resort lounge chair by the water, wearing a tan baseball cap and sunglasses, holding a coffee mug that says 'Home Watch Boss'"
                   fill
                   sizes="(max-width: 1024px) 100vw, 35vw"

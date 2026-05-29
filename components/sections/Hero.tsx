@@ -114,7 +114,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Premium Structural Visual Frame */}
-          <div className="lg:col-span-5 relative w-full h-[500px] flex items-center justify-center">
+          <div className="lg:col-span-5 relative w-full h-[360px] sm:h-[450px] lg:h-[500px] flex items-center justify-center">
             
             {/* Background design accents to ground the image */}
             <motion.div 
@@ -136,7 +136,7 @@ export default function Hero() {
               className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-sand"
             >
               <Image 
-                src="https://picsum.photos/seed/floridaluxuryhouse/800/1000"
+                src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1170"
                 alt="Beautiful high-end South Florida family luxury estate with clean coastal lines, palm trees, and bright blue skies"
                 fill
                 priority
@@ -145,17 +145,19 @@ export default function Hero() {
                 referrerPolicy="no-referrer"
               />
               
-              {/* Luxury Glassmorphism Overlay Card */}
-              <div className="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-brand-navy/85 backdrop-blur-md border border-brand-sand/10 text-brand-sand flex flex-col justify-between">
-                <div className="flex justify-between items-start mb-2">
-                  <span className="text-xs font-bold uppercase tracking-widest text-brand-teal">Coverage Status</span>
+              {/* Compact Floating Protective Status Badge */}
+              <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-[280px] p-4 rounded-xl bg-brand-navy/90 backdrop-blur-md border border-brand-sand/10 text-brand-sand shadow-xl flex flex-col gap-1 transition-all duration-300 hover:bg-brand-navy/95">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-brand-teal">Patrol Status</span>
                   <span className="flex h-2 w-2 relative">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-teal"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-teal"></span>
                   </span>
                 </div>
-                <p className="text-lg font-bold tracking-tight">Active Seasonal Patrols Active</p>
-                <p className="text-xs text-brand-sand/70 mt-1">Fortifying residences in {SITE_CONFIG.serviceArea} through strict periodic walk-throughs.</p>
+                <p className="text-sm font-extrabold tracking-tight">Seasonal Monitoring Active</p>
+                <p className="text-[10px] text-brand-sand/70 leading-normal">
+                  Meticulous interior/exterior inspections & instant digital walkthrough reports.
+                </p>
               </div>
 
             </motion.div>

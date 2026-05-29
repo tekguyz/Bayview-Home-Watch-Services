@@ -20,63 +20,53 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          position: "relative",
-          backgroundColor: "#FAF8F5", // Premium warm resort sand background
-          color: "#081721",           // AUTHORITATIVE deep midnight navy text
-          padding: "70px 80px",
-          flexDirection: "column",
-          justifyContent: "space-between",
+          flexDirection: "row",
           boxSizing: "border-box",
           fontFamily: "sans-serif",
+          overflow: "hidden",
         }}
       >
-        {/* Subtle, elegant hand-crafted inner framing detail representing technical caliber */}
+        {/* LEFT PANEL - Deep Midnight Brand Navy Block (40%) */}
         <div
           style={{
-            position: "absolute",
-            top: "30px",
-            left: "30px",
-            right: "30px",
-            bottom: "30px",
-            border: "1px solid rgba(8, 23, 33, 0.08)",
-            borderRadius: "24px",
-            pointerEvents: "none",
-          }}
-        />
-
-        {/* Ambient warm resort sunburst background glow reflection */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "40px",
-            right: "40px",
-            width: "300px",
-            height: "300px",
-            borderRadius: "999px",
-            backgroundColor: "rgba(0, 168, 150, 0.05)",
-            filter: "blur(60px)",
-          }}
-        />
-
-        {/* Brand Header Section: Logo & Titles Side-by-Side */}
-        <div
-          style={{
+            width: "40%",
+            height: "100%",
+            backgroundColor: "#081721",
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             alignItems: "center",
-            gap: "24px",
+            justifyContent: "center",
+            padding: "50px",
+            boxSizing: "border-box",
+            position: "relative",
+            borderRight: "4px solid #00a896", // Tropic teal demarcation bar
           }}
         >
-          {/* Concept 1: The Modern Guardian Vector SVG Representation */}
+          {/* Subtle decorative background arch inside the left panel */}
           <div
             style={{
-              width: "84px",
-              height: "84px",
+              position: "absolute",
+              top: "-50px",
+              left: "-50px",
+              width: "250px",
+              height: "250px",
+              borderRadius: "999px",
+              border: "2px solid rgba(0, 168, 150, 0.1)",
+              pointerEvents: "none",
+            }}
+          />
+
+          {/* Scaled-up SVG Logo */}
+          <div
+            style={{
+              width: "160px",
+              height: "160px",
               display: "flex",
+              marginBottom: "30px",
             }}
           >
-            <svg width="84" height="84" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Elegant protective watchful arch */}
+            <svg width="160" height="160" viewBox="6 6 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Watchful protective arch */}
               <path 
                 d="M 8 44 C 8 20, 56 20, 56 44" 
                 stroke="#00a896" 
@@ -84,30 +74,27 @@ export default async function Image() {
                 strokeLinecap="round" 
               />
               
-              {/* Minimalist modern luxury sloped-roof house profile */}
-              {/* Roof slab */}
+              {/* Minimalist luxury estate slope-roof profile */}
               <path 
                 d="M 14 34 L 38 22 L 48 30" 
-                stroke="#081721" 
+                stroke="#ffffff" 
                 strokeWidth="3.5" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
               />
-              {/* Main house frame */}
               <path 
                 d="M 18 32 V 46 H 44 V 32.5" 
-                stroke="#081721" 
+                stroke="#ffffff" 
                 strokeWidth="2.5" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
               />
-              {/* Modern vertical glass window pane */}
               <rect 
                 x="24" 
                 y="36" 
                 width="6" 
                 height="10" 
-                stroke="#081721" 
+                stroke="#ffffff" 
                 strokeWidth="1.5" 
                 rx="1" 
               />
@@ -121,10 +108,10 @@ export default async function Image() {
                 strokeLinecap="round" 
               />
 
-              {/* Stylized palm tree silhouette */}
+              {/* Palm Tree Detail */}
               <path 
                 d="M 49 46 Q 52 38 49 28" 
-                stroke="#081721" 
+                stroke="#ffffff" 
                 strokeWidth="2" 
                 strokeLinecap="round" 
               />
@@ -135,116 +122,175 @@ export default async function Image() {
                 strokeLinecap="round" 
               />
 
-              {/* Golden warm coastal sun accent */}
+              {/* Coastal Sun */}
               <circle cx="32" cy="14" r="3" fill="#eab308" stroke="#eab308" strokeWidth="1" />
             </svg>
           </div>
 
-          {/* Typography Panel */}
+          {/* Centered Typography Section */}
+          <span
+            style={{
+              fontSize: "44px",
+              fontWeight: 900,
+              letterSpacing: "0.1em",
+              color: "#FAF8F5",
+              textTransform: "uppercase",
+              lineHeight: "1",
+              marginBottom: "8px",
+            }}
+          >
+            BAYVIEW
+          </span>
+          <span
+            style={{
+              fontSize: "13px",
+              fontWeight: 800,
+              letterSpacing: "0.25em",
+              color: "#00a896",
+              textTransform: "uppercase",
+              lineHeight: "1",
+              textAlign: "center",
+            }}
+          >
+            HOME WATCH SERVICES
+          </span>
+        </div>
+
+        {/* RIGHT PANEL - Resort Warm Sand Canvas (60%) */}
+        <div
+          style={{
+            width: "60%",
+            height: "100%",
+            backgroundColor: "#FAF8F5",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            padding: "80px 70px",
+            boxSizing: "border-box",
+            position: "relative",
+          }}
+        >
+          {/* Soft inner frame border detail */}
+          <div
+            style={{
+              position: "absolute",
+              top: "30px",
+              left: "30px",
+              right: "30px",
+              bottom: "30px",
+              border: "1.5px solid rgba(8, 23, 33, 0.05)",
+              borderRadius: "20px",
+              pointerEvents: "none",
+            }}
+          />
+
+          {/* Premium tag at the top */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+            }}
+          >
+            <span
+              style={{
+                width: "8px",
+                height: "8px",
+                borderRadius: "999px",
+                backgroundColor: "#00a896",
+              }}
+            />
+            <span
+              style={{
+                fontSize: "12px",
+                fontWeight: 900,
+                color: "#111827",
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+              }}
+            >
+              Professional Broward County Property Care
+            </span>
+          </div>
+
+          {/* Main Marketing Headline & Dynamic Copy */}
           <div
             style={{
               display: "flex",
               flexDirection: "column",
+              marginTop: "40px",
+              marginBottom: "40px",
             }}
           >
             <span
               style={{
-                fontSize: "42px",
+                fontSize: "46px",
                 fontWeight: 900,
-                letterSpacing: "0.08em",
                 color: "#081721",
-                textTransform: "uppercase",
-                lineHeight: "1",
+                letterSpacing: "-0.02em",
+                lineHeight: "1.2",
+                marginBottom: "20px",
               }}
             >
-              Bayview
+              Heading Back North for the Season?
             </span>
             <span
               style={{
-                fontSize: "14px",
-                fontWeight: 850,
-                letterSpacing: "0.22em",
-                color: "#00a896",
-                textTransform: "uppercase",
-                lineHeight: "1",
-                marginTop: "6px",
+                fontSize: "24px",
+                fontWeight: 500,
+                color: "rgba(8, 23, 33, 0.75)",
+                lineHeight: "1.4",
               }}
             >
-              Home Watch Services
+              Your property&apos;s certified seasonal guardian. Meticulous storm prep, mold checkpoints, and high-frequency digital reporting.
             </span>
           </div>
-        </div>
 
-        {/* Core Marketing Copy: Hook & Dynamic Description */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-end",
-            marginTop: "60px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "52px",
-              fontWeight: 900,
-              color: "#081721",
-              letterSpacing: "-0.02em",
-              lineHeight: "1.15",
-              marginBottom: "16px",
-            }}
-          >
-            Heading Back North for the Season?
-          </span>
-          <span
-            style={{
-              fontSize: "26px",
-              fontWeight: 650,
-              color: "rgba(8, 23, 33, 0.72)",
-              lineHeight: "1.25",
-              maxWidth: "850px",
-            }}
-          >
-            Your Home&apos;s Seasonal Guardian in Broward County. Licensed, bonded, and detail-obsessed walkthrough protection.
-          </span>
-        </div>
-
-        {/* Premium Trust Badge Overlay in corner */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "70px",
-            right: "80px",
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
-            border: "1.5px solid rgba(234, 179, 8, 0.25)",
-            backgroundColor: "rgba(234, 179, 8, 0.08)",
-            padding: "10px 18px",
-            borderRadius: "999px",
-            boxSizing: "border-box",
-          }}
-        >
-          {/* Micro gold beacon */}
+          {/* Bottom Segment: Trust Validation Badges */}
           <div
             style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "999px",
-              backgroundColor: "#eab308",
-            }}
-          />
-          <span
-            style={{
-              fontSize: "11px",
-              fontWeight: 800,
-              color: "#eab308",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
             }}
           >
-            Certified Watchkeepers
-          </span>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                backgroundColor: "rgba(0, 168, 150, 0.08)",
+                border: "1.5px solid rgba(0, 168, 150, 0.25)",
+                borderRadius: "30px",
+                padding: "10px 24px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "13px",
+                  fontWeight: 900,
+                  color: "#00a896",
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Fully Bonded, Insured & Local
+              </span>
+            </div>
+
+            <span
+              style={{
+                fontSize: "12px",
+                fontWeight: 800,
+                color: "rgba(8, 23, 33, 0.4)",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+              }}
+            >
+              EST. BROWARD COUNTY
+            </span>
+          </div>
         </div>
       </div>
     ),
