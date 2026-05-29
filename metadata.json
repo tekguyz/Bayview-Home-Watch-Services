@@ -1,0 +1,6 @@
+{
+  "name": "Bayview Home Watch Services",
+  "description": "Premium home watch, property care and concierge services in Broward County, South Florida.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

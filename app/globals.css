@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Deeper, more saturated midnight ocean navy */
+  --color-brand-navy: oklch(18% 0.04 245);   
+  /* High-chroma, vibrant tropical turquoise blue directly from the flyers */
+  --color-brand-teal: oklch(64% 0.19 215);   
+  /* Ultra-clean, warm resort sand backdrop */
+  --color-brand-sand: oklch(97% 0.015 85);   
+  /* Rich, warm sunny marigold gold for high-contrast warnings/scripts */
+  --color-brand-gold: oklch(78% 0.16 80);    
+  
+  --font-sans: var(--font-sans), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-brand-sand);
+  color: var(--color-brand-navy);
+}
