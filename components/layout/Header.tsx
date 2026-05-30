@@ -196,10 +196,10 @@ export default function Header() {
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
-            <div className="relative w-5 h-4 flex flex-col justify-between">
-              <span className={`w-full h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`} />
-              <span className={`w-full h-0.5 bg-current rounded transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`} />
-              <span className={`w-full h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
+            <div className="relative w-5 h-5 flex items-center justify-center">
+              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-0" : "-translate-y-1.5"}`} />
+              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`} />
+              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "-rotate-45 translate-y-0" : "translate-y-1.5"}`} />
             </div>
           </button>
         </div>

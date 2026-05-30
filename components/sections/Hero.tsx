@@ -9,14 +9,14 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative min-h-[90vh] flex items-center justify-center py-16 lg:py-24 overflow-hidden bg-brand-sand border-b border-brand-navy/10"
+      className="relative min-h-[75vh] lg:min-h-[80vh] xl:min-h-[85vh] flex items-center justify-center py-10 lg:py-16 xl:py-20 overflow-hidden bg-brand-sand border-b border-brand-navy/10"
     >
       {/* Subtle ambient luxury background highlights */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-teal/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-gold/5 blur-[100px] pointer-events-none" />
-
+ 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full animate-fade-in">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* Left Column: Text & Hero Content */}
           <div className="lg:col-span-7 flex flex-col justify-center text-left">
@@ -25,39 +25,39 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 self-start rounded-full bg-brand-navy/5 px-4 py-2 border border-brand-navy/10 mb-6"
+              className="inline-flex items-center gap-2 self-start rounded-full bg-brand-navy/5 px-3 py-1.5 sm:px-4 sm:py-2 border border-brand-navy/10 mb-5 sm:mb-6"
             >
               <ShieldCheck className="h-4 w-4 text-brand-teal shrink-0" />
-              <span className="text-xs uppercase font-extrabold tracking-widest text-brand-navy">
-                Certified Home Watch Professionals
+              <span className="text-[10px] sm:text-xs uppercase font-black tracking-wider sm:tracking-widest text-brand-navy whitespace-nowrap">
+                Certified Home Watch <span className="hidden sm:inline">Professionals</span>
               </span>
             </motion.div>
-
+ 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-brand-navy"
+              className="text-4xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-black tracking-tight leading-[1.05] text-brand-navy"
             >
               Heading Back <br />
               <span className="text-brand-teal">North</span> for the Season?
             </motion.h1>
-
+ 
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-6 text-lg sm:text-xl text-brand-navy/80 leading-relaxed max-w-2xl font-light"
+              className="mt-5 text-base sm:text-lg lg:text-xl xl:text-2xl text-brand-navy/80 leading-relaxed max-w-2xl font-light"
             >
               While you escape the South Florida heat, we keep a precise, protective eye on your property. No surprises, no stress—just complete peace of mind from anywhere.
             </motion.p>
-
+ 
             {/* Micro value badges */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.45 }}
-              className="mt-8 grid grid-cols-2 gap-4 max-w-sm pb-8 border-b border-brand-navy/10"
+              className="mt-6 grid grid-cols-2 gap-4 max-w-sm pb-6 border-b border-brand-navy/10"
             >
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-brand-teal" />
@@ -68,13 +68,13 @@ export default function Hero() {
                 <span className="text-xs font-bold text-brand-navy/70 uppercase tracking-wider">Licensed & Insured</span>
               </div>
             </motion.div>
-
+ 
             {/* CTAs */}
             <motion.div 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.55 }}
-              className="mt-8 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center"
+              className="mt-6 flex flex-col sm:flex-row gap-3.5 items-stretch sm:items-center"
             >
               <a
                 href="#contact"
@@ -84,7 +84,7 @@ export default function Hero() {
                 <span>Secure My Home</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
-
+ 
               <a
                 href="#services"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-navy/20 bg-transparent px-8 py-4 text-base font-bold text-brand-navy hover:bg-brand-navy/5 transition-all duration-300 hover:-translate-y-0.5"
@@ -93,13 +93,13 @@ export default function Hero() {
                 <span>Explore Services</span>
               </a>
             </motion.div>
-
+ 
             {/* Direct Line Mini Footer */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
-              className="mt-6 flex items-center gap-3 text-sm font-semibold text-brand-navy/65"
+              className="mt-5 flex items-center gap-2.5 text-sm font-semibold text-brand-navy/65"
             >
               <PhoneCall className="h-4 w-4 text-brand-teal shrink-0 animate-pulse" />
               <span>Or call us directly:</span>

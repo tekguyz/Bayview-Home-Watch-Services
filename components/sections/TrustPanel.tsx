@@ -38,10 +38,10 @@ export default function TrustPanel() {
       <div className="absolute bottom-[10%] left-[-10%] w-[350px] h-[350px] rounded-full bg-brand-teal/8 blur-[100px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* Left Column: Premium Visual Showcase (Mascot / Chief Relaxation Officer representation) */}
-          <div className="lg:col-span-5 flex flex-col items-center">
+          <div className="lg:col-span-5 flex flex-col items-center order-2 lg:order-1 mt-6 lg:mt-0">
             
             {/* Playful Floating Thought Bubble */}
             <motion.div 
@@ -59,14 +59,14 @@ export default function TrustPanel() {
               <div className="absolute bottom-[-16px] right-[40px] w-2 h-2 rounded-full bg-brand-sand border border-brand-navy" />
               <div className="absolute bottom-[-24px] right-[46px] w-1 h-1 rounded-full bg-brand-sand border border-brand-navy" />
             </motion.div>
-
+ 
             {/* Main Picture Wrapper */}
             <div className="relative w-full aspect-square max-w-[420px] sm:max-w-[460px] md:max-w-[400px] lg:max-w-full">
               
               {/* Decorative offset borders */}
               <div className="absolute -inset-2.5 rounded-[32px] border-2 border-brand-teal/30 pointer-events-none animate-pulse" />
               <div className="absolute inset-2.5 rounded-[22px] border border-brand-gold/40 pointer-events-none" />
-
+ 
               {/* Chief Relaxation Officer Portrayed Image */}
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand bg-brand-navy/5 group">
                 <Image 
@@ -84,38 +84,38 @@ export default function TrustPanel() {
                   <span>Chief Relaxation Officer</span>
                 </div>
               </div>
-
+ 
               {/* Rustic wood sign replica */}
               <motion.div 
                 initial={{ opacity: 0, rotate: -4, y: 15 }}
                 whileInView={{ opacity: 1, rotate: -2, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
-                className="absolute bottom-[-16px] sm:bottom-[-25px] right-1.5 sm:right-4 lg:-right-6 bg-brand-navy text-brand-sand border border-brand-gold sm:border-2 px-3 py-2 sm:px-6 sm:py-3.5 rounded-lg sm:rounded-xl shadow-xl sm:shadow-2xl max-w-[190px] sm:max-w-[260px] z-20"
+                className="absolute bottom-[-24px] sm:bottom-[-25px] right-2 sm:right-4 lg:-right-6 bg-brand-navy text-brand-sand border border-brand-gold sm:border-2 px-2.5 py-1.5 sm:px-5 sm:py-3 rounded-lg sm:rounded-xl shadow-xl sm:shadow-2xl max-w-[140px] sm:max-w-[240px] z-20"
               >
                 <div className="text-center">
-                  <div className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-teal mb-0.5 sm:mb-1">Our Professional Verdict</div>
-                  <span className="font-extrabold text-[10px] sm:text-xs md:text-sm text-brand-sand tracking-wide block leading-tight uppercase font-mono">
-                    &ldquo;ALL CLEAR. YOU&apos;RE GOOD. <br />
-                    <span className="text-brand-gold">GO ENJOY LIFE!&rdquo;</span>
+                  <div className="text-[7.5px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-teal mb-0.5">Our Professional Verdict</div>
+                  <span className="font-extrabold text-[8.5px] sm:text-xs text-brand-sand tracking-wide block leading-tight uppercase font-mono">
+                    &ldquo;ALL CLEAR. <br className="sm:hidden" /> YOU&apos;RE GOOD. <br />
+                    <span className="text-brand-gold">GO ENJOY!&rdquo;</span>
                   </span>
-                  <div className="mt-0.5 sm:mt-1 flex justify-center text-brand-teal">
-                    <Heart className="h-3.5 w-3.5 sm:h-4 w-4 fill-current" />
+                  <div className="mt-0.5 flex justify-center text-brand-teal">
+                    <Heart className="h-3 w-3 sm:h-4 sm:w-4 fill-current" />
                   </div>
                 </div>
               </motion.div>
-
+ 
             </div>
-
+ 
           </div>
-
+ 
           {/* Right Column: High-Trust Copywriting & VIP Badges */}
-          <div className="lg:col-span-7 flex flex-col justify-center text-left mt-10 lg:mt-0">
+          <div className="lg:col-span-7 flex flex-col justify-center text-left order-1 lg:order-2">
             
             <div className="inline-flex items-center gap-2 rounded-full bg-brand-teal/10 px-3.5 py-1.5 border border-brand-teal/20 mb-6 self-start">
               <Sparkles className="h-4 w-4 text-brand-teal" />
               <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest text-brand-navy">
-                Meticulous South Florida Local Advocacy
+                South Florida Local Advocacy
               </span>
             </div>
 
