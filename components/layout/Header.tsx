@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { SITE_CONFIG } from "@/lib/constants";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -192,15 +193,15 @@ export default function Header() {
           
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="relative z-50 flex h-11 w-11 items-center justify-center rounded-full text-brand-navy md:hidden hover:bg-brand-navy/5 focus:outline-none transition-colors border border-brand-navy/10"
+            className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full text-brand-navy md:hidden hover:bg-brand-navy/5 focus:outline-none transition-all duration-300 border border-brand-navy/10 active:scale-95"
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
-            <div className="relative w-5 h-5 flex items-center justify-center">
-              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-0" : "-translate-y-1.5"}`} />
-              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`} />
-              <span className={`absolute w-5 h-0.5 bg-current rounded transition-all duration-300 ${isOpen ? "-rotate-45 translate-y-0" : "translate-y-1.5"}`} />
-            </div>
+            {isOpen ? (
+              <X className="h-5 w-5 transition-transform duration-300 rotate-0 hover:rotate-90 text-brand-navy" />
+            ) : (
+              <Menu className="h-5 w-5 transition-transform duration-300 text-brand-navy" />
+            )}
           </button>
         </div>
       </div>
