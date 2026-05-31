@@ -71,7 +71,7 @@ export default function ProblemSolver() {
             </div>
             <div>
               <span className="text-[10px] font-bold uppercase tracking-widest text-brand-teal block mb-2">The Critical Contrast</span>
-              <h3 className="text-2xl font-black text-brand-sand leading-tight">Neighbor Favors vs. Professional Vigilance</h3>
+              <h3 className="text-2xl font-black text-brand-sand leading-tight">Neighbor Favors vs. Professional Watch</h3>
               <p className="text-sm font-light text-brand-sand/70 mt-4 leading-relaxed">
                 Relying on a casual friend or neighbor to look after a multi-million dollar asset often leads to delayed responses. A quick walk-through can overlook hidden plumbing pressure changes, humidity drift, or early pest infestations.
               </p>
